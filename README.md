@@ -95,8 +95,8 @@ adaptive learning, and decision-intelligence tooling.
 ## Contact
 
 - **Site:** [aadiadarsh.dev](https://aadiadarsh.dev)
-- **Email:** [adarshkr26@gmail.com](mailto:adarshkr26@gmail.com)
-- **LinkedIn:** [linkedin.com/in/adarshkumar-ai-research](https://linkedin.com/in/adarshkumar-ai-research)
+- **Email:** [work@aadiadarsh.dev](mailto:work@aadiadarsh.dev)
+- **LinkedIn:** [linkedin.com/in/adarsh-k-970010399](https://www.linkedin.com/in/adarsh-k-970010399/)
 - **Location:** India · open to remote and on-site
 
 ---
