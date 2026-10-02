@@ -12,7 +12,7 @@ change of underlying model.
 
 ## CCCS — the framework
 
-**CCCS (Conscious Continuation & Cognitive Systems)** is a 7-layer architecture for maintaining
+**CCCS (Conscious Continuation & Cognitive Systems)** — a functional architecture label, not a claim about phenomenal consciousness — is a 7-layer architecture for maintaining
 identity coherence across extended conversational timescales:
 
 | # | Layer | Role |
@@ -37,16 +37,15 @@ identity coherence across extended conversational timescales:
 
 ## R-Score — the evaluation metric
 
-R-Score exists so the architecture can be tested rather than asserted. Three components,
-combined under tunable weights:
+R-Score exists so the architecture can be tested rather than asserted. Three components, combined under locked weights (0.4 / 0.3 / 0.3, CANONICAL v1.0.0):
 
 | Component | Definition | Design target |
 | --- | --- | --- |
 | Semantic Drift (SD) | `1 − cosine_similarity(output_embedding, baseline_embedding)` | `< 0.15` |
-| Affective Latency Match (ALM) | `\|response_time_model − response_time_baseline\| / response_time_baseline` — a *divergence*, so lower is better | match term `(1 − ALM) > 0.85` |
+| Affective Latency Match (ALM) | `1 − mean(|out_t − base_t| / (base_t + 1e-6))`, clipped to [0, 1] — a *match*, so higher is better | `> 0.85` |
 | Symbolic Anchor Hit-Rate (SAHR) | `correct_anchor_deployments / total_anchor_opportunities` | `> 90%` |
 
-**Combined:** `R = w₁·(1 − SD) + w₂·(1 − ALM) + w₃·SAHR`
+**Combined (CANONICAL v1.0.0, locked weights):** `R = 0.4·(1 − SD) + 0.3·ALM + 0.3·SAHR`
 
 These are **design thresholds, not results.** No R-Score figure here should be read as a
 measured outcome until it ships with the inputs it was computed from.
