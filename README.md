@@ -50,6 +50,8 @@ R-Score exists so the architecture can be tested rather than asserted. Three com
 These are **design thresholds, not results.** No R-Score figure here should be read as a
 measured outcome until it ships with the inputs it was computed from.
 
+First observed R = 0.938 — an N=1 signal, not validation.
+
 ## Status of the evidence
 
 **24-hour continuous interaction session (Feb 2026)** — a single documented N=1 case, self-run
@@ -70,7 +72,7 @@ What it does not support: any general claim about efficacy, learning, or scale.
 ## Repositories
 
 These are **architecture specifications** — component breakdowns, formulas, and integration
-notes. Implementation is in progress and not yet public. Labeled that way deliberately, so
+notes. Reference R-Score implementation is public in emotional-ai-architecture (14/14 tests); remaining layers are specs. Labeled that way deliberately, so
 nobody clones one expecting a library.
 
 ### [emotional-ai-architecture](https://github.com/aadi-architect/emotional-ai-architecture)
