@@ -62,8 +62,8 @@ What it does not support: any general claim about efficacy, learning, or scale.
 
 ## Technical stack
 
-`Python` `JavaScript` `LangChain` `FastAPI` `HuggingFace Transformers` `PyTorch`
-`OpenAI GPT` `Anthropic Claude` `Google Gemini` `xAI Grok` `FAISS` `ChromaDB` `ElevenLabs`
+`Python` `JavaScript` `HuggingFace Transformers` `PyTorch`
+`OpenAI GPT` `Anthropic Claude` `Google Gemini` `xAI Grok` `ElevenLabs`
 
 ## Repositories
 
