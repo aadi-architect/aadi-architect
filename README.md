@@ -2,7 +2,7 @@
 
 **Identity-continuity systems for conversational AI that does not reset between sessions**
 
-[aadiadarsh.dev](https://aadiadarsh.dev) · Applied AI Engineer · India · Remote & on-site
+[aadiadarsh.dev](https://aadiadarsh.dev) · [ORCID: 0009-0004-4779-3076](https://orcid.org/0009-0004-4779-3076) · Applied AI Engineer · India · Remote & on-site
 
 I work at the intersection of **affective computing**, **long-term memory architectures**, and
 **cognitive modeling**. The problem I keep returning to: current LLM deployments discard
@@ -33,35 +33,31 @@ identity coherence across extended conversational timescales:
 
 - **RICA** (Relational Identity & Continuity Architecture) — symbolic anchoring plus emotional pattern persistence
 - **SIM Core** — multi-path decision simulation across emotional, social, and practical consequence spaces
-- **GOD** (General Observer Dynamics) — Bayesian observer module: `P(Persona | Context, Anchors, Belief)`
+- **PersonaPosterior** — Bayesian observer module: `P(Persona | Context, Anchors, Belief)` [Designed]
 
 ## R-Score — the evaluation metric
 
-R-Score exists so the architecture can be tested rather than asserted. Three components, combined under locked weights (0.4 / 0.3 / 0.3, CANONICAL v1.0.0):
+R-Score exists so the architecture can be tested rather than asserted. Three components, combined under locked weights (0.4 / 0.3 / 0.3, CANONICAL v1.0.1):
 
-| Component | Definition | Design target |
-| --- | --- | --- |
-| Semantic Drift (SD) | `1 − cosine_similarity(output_embedding, baseline_embedding)` | `< 0.15` |
-| Affective Latency Match (ALM) | `1 − mean(|out_t − base_t| / (base_t + 1e-6))`, clipped to [0, 1] — a *match*, so higher is better | `> 0.85` |
-| Symbolic Anchor Hit-Rate (SAHR) | `correct_anchor_deployments / total_anchor_opportunities` | `> 90%` |
+| Component | Definition | Design target | Status |
+| --- | --- | --- | --- |
+| Semantic Drift (SD) | `1 − cosine_similarity(output_embedding, baseline_embedding)` | `< 0.15` | **Designed** (target) |
+| Affective Latency Match (ALM) | `1 − mean(|out_t − base_t| / (base_t + 1e-6))`, clipped to [0, 1] — a *match*, so higher is better | `> 0.85` | **Designed** (target) |
+| Symbolic Anchor Hit-Rate (SAHR) | `correct_anchor_deployments / total_anchor_opportunities` | `> 90%` | **Designed** (target) |
 
-**Combined (CANONICAL v1.0.0, locked weights):** `R = 0.4·(1 − SD) + 0.3·ALM + 0.3·SAHR`
+**Combined (CANONICAL v1.0.1, locked weights):** `R = 0.4·(1 − SD) + 0.3·ALM + 0.3·SAHR`
 
 These are **design thresholds, not results.** No R-Score figure here should be read as a
 measured outcome until it ships with the inputs it was computed from.
 
-First observed R = 0.938 — an N=1 signal, not validation.
+First observed R = 0.938 — an N=1 pilot signal, not validation. [Measured]
 
 ## Status of the evidence
 
-**24-hour continuous interaction session (Feb 2026)** — a single documented N=1 case, self-run
-and not peer-reviewed. The 7-layer stack ran continuously for the duration, and 5+ framework
-integrations were produced from a zero baseline. A `+250%` conceptual-complexity figure is often
-quoted alongside this session; it is **source-reported and not independently reconstructible** —
-the calculation method and the comparative dataset were not preserved, so treat it as an
-anecdote rather than a measurement.
+- **24-hour continuous interaction session (Feb 2026) [Observed, N=1 self-run]:** a single documented N=1 case, self-run and not peer-reviewed. The 7-layer stack ran continuously for the duration, and 5+ framework integrations were produced from a zero baseline.
+- **+250% conceptual-complexity figure [Unverified, source-reported]:** often quoted alongside this session; it is source-reported and not independently reconstructible — the calculation method and the comparative dataset were not preserved, so treat it as an anecdote rather than a measurement.
 
-What this evidence does support: the metrics are computable and the stack runs end to end.
+What this evidence does support [Observed]: the metrics are computable and the stack runs end to end.
 What it does not support: any general claim about efficacy, learning, or scale.
 
 ## Technical stack
@@ -96,6 +92,7 @@ adaptive learning, and decision-intelligence tooling.
 ## Contact
 
 - **Site:** [aadiadarsh.dev](https://aadiadarsh.dev)
+- **ORCID:** [0009-0004-4779-3076](https://orcid.org/0009-0004-4779-3076)
 - **Email:** [work@aadiadarsh.dev](mailto:work@aadiadarsh.dev)
 - **LinkedIn:** [linkedin.com/in/adarsh-k-970010399](https://www.linkedin.com/in/adarsh-k-970010399/)
 - **Location:** India · open to remote and on-site
