@@ -54,7 +54,7 @@ First observed R = 0.938 — an N=1 pilot signal, not validation. [Measured]
 
 ## Status of the evidence
 
-- **24-hour continuous interaction session (Feb 2026) [Observed, N=1 self-run]:** a single documented N=1 case, self-run and not peer-reviewed. The 7-layer stack ran continuously for the duration, and 5+ framework integrations were produced from a zero baseline.
+- **24-hour continuous interaction session (Feb 2026) [Observed, N=1 self-run]:** a single documented N=1 case, self-run and not peer-reviewed. The 7-layer stack ran continuously for the duration, and 5+ framework integrations were produced from a zero baseline [Unverified, self-reported].
 - **+250% conceptual-complexity figure [Unverified, source-reported]:** often quoted alongside this session; it is source-reported and not independently reconstructible — the calculation method and the comparative dataset were not preserved, so treat it as an anecdote rather than a measurement.
 
 What this evidence does support [Observed]: the metrics are computable and the stack runs end to end.
